@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 // INTERFACE 1
-// interface Grading {
+interface Grading {
     char calculateGrade(double marks);
 }
 
@@ -83,7 +83,7 @@ class GraduateStudent extends Student {
 }
 
 //  FILE HANDLING
-//  class FileUtil {
+ class FileUtil {
     private String fileName = "students.txt";
 
     public void save(List<Student> list) {
