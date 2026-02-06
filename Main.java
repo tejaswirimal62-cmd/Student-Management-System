@@ -66,9 +66,9 @@ abstract class Person {
     @Override
     public void display() {
         System.out.println("ID: " + getId()); 
-              System.out.println("Name: " + getName()); 
-                System.out.println( "Marks: " + marks):
-                System.out.println("Grade: " + calculateGrade(marks));
+        System.out.println("Name: " + getName()); 
+         System.out.println( "Marks: " + marks):
+        System.out.println("Grade: " + calculateGrade(marks));
     }
 }
 
