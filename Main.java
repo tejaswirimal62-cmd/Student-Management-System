@@ -44,26 +44,31 @@ abstract class Person {
         this.marks = marks;
     }
 
-    public double getMarks() { return marks; }
-
-    @Override
-    public char calculateGrade(double marks) {
-        if (marks >= 80)
-            return 'A';
-        else if (marks >= 60)
-            return 'B';
-        else if (marks >= 40)
-            return 'C';
-        else
-            return 'F';
+    public double getMarks() {
+        return marks;
     }
 
     @Override
+    public char calculateGrade(double marks) {
+        if (marks >= 80){
+            return 'A';
+        }
+        else if (marks >= 60){
+            return 'B';
+        }
+        else if (marks >= 40){
+            return 'C';
+        }
+        else{
+            return 'F';
+    }
+    }
+    @Override
     public void display() {
-        System.out.println("ID: " + getId() +
-                ", Name: " + getName() +
-                ", Marks: " + marks +
-                ", Grade: " + calculateGrade(marks));
+        System.out.println("ID: " + getId()); 
+              System.out.println("Name: " + getName()); 
+                System.out.println( "Marks: " + marks):
+                System.out.println("Grade: " + calculateGrade(marks));
     }
 }
 
