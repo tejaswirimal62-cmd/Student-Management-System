@@ -67,7 +67,7 @@ abstract class Person {
     public void display() {
         System.out.println("ID: " + getId()); 
         System.out.println("Name: " + getName()); 
-         System.out.println( "Marks: " + marks):
+         System.out.println( "Marks: " + marks);
         System.out.println("Grade: " + calculateGrade(marks));
     }
 }
