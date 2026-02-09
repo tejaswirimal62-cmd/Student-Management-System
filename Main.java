@@ -12,6 +12,13 @@ interface Storable {
     void loadData();
 }
 
+//INVALID CUSTOM EXCEPTION
+class InvalidMarksException extends Exception {
+    public InvalidMarksException(String message) {
+        super(message);
+    }
+}
+
 //  ABSTRACT CLASS
 abstract class Person {
     private int id;
@@ -80,10 +87,18 @@ class GraduateStudent extends Student {
 
     @Override
     public char calculateGrade(double marks) {
-        if (marks >= 85) return 'A';
-        else if (marks >= 65) return 'B';
-        else if (marks >= 50) return 'C';
-        else return 'F';
+        if (marks >= 85){
+            return 'A';
+        }
+        else if (marks >= 65){ 
+            return 'B';
+        }
+        else if (marks >= 50){
+            return 'C';
+        }
+        else{
+            return 'F';
+    }
     }
 }
 
