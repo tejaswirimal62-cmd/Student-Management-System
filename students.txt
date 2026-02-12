@@ -1,2 +1,3 @@
-112,tejaswi ,90.0
-223,kripa,99.0
+122,Tejaswi Rimal,86
+112,Sneha Kandel,60
+
